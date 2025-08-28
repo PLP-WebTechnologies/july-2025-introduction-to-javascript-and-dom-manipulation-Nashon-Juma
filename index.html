@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Fundamentals</title>
+</head>
+<body>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    
+    <div class="container">
+        <header>
+            <h1>JavaScript Fundamentals</h1>
+            <p>Demonstrating Variables, Conditionals, Functions, Loops, and DOM Manipulation</p>
+        </header>
+        
+        <!-- Part 1: Variables and Conditionals -->
+        <section class="section">
+            <h2>Part 1: Variables and Conditionals</h2>
+            <p>Enter your age to check if you're eligible to vote:</p>
+            <div class="input-group">
+                <input type="number" id="ageInput" placeholder="Enter your age">
+                <button onclick="checkEligibility()">Check Eligibility</button>
+            </div>
+            <div class="output" id="eligibilityOutput"></div>
+        </section>
+        
+        <!-- Part 2: Functions -->
+        <section class="section">
+            <h2>Part 2: Functions</h2>
+            <p>Enter two numbers to calculate their sum and product:</p>
+            <div class="input-group">
+                <input type="number" id="num1" placeholder="First number">
+                <input type="number" id="num2" placeholder="Second number">
+                <button onclick="calculate()">Calculate</button>
+            </div>
+            <div class="output" id="calculationOutput"></div>
+        </section>
+        
+        <!-- Part 3: Loops -->
+        <section class="section">
+            <h2>Part 3: Loops</h2>
+            <p>Enter a number to generate a multiplication table:</p>
+            <div class="input-group">
+                <input type="number" id="multiplierInput" placeholder="Enter a number">
+                <button onclick="generateTable()">Generate Table</button>
+            </div>
+            <div class="output" id="tableOutput"></div>
+        </section>
+        
+        <!-- Part 4: DOM Manipulation -->
+        <section class="section">
+            <h2>Part 4: DOM Manipulation</h2>
+            <p>Click the button to add a new item to the list:</p>
+            <div class="input-group">
+                <input type="text" id="newItemInput" placeholder="Enter item name">
+                <button onclick="addItem()">Add Item</button>
+            </div>
+            <button onclick="clearList()" style="margin-top: 10px; border-radius: 5px;">Clear List</button>
+            <div class="output">
+                <ul id="itemList"></ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
